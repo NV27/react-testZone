@@ -1,0 +1,19 @@
+.myButton{
+    background-color: rgb(232, 253, 253);
+    border: 2px black solid;
+    color: black;
+    font-weight: 600;
+    font-size: 60px;
+    padding: 0px;
+}
+
+.myButton:hover{
+    border: 2px rgb(0, 0, 0) solid;
+    background-color: rgb(255, 112, 112);
+}
+
+.myButton:active{
+    border: 2px rgb(0, 0, 0) solid;
+    background-color: rgb(255, 212, 212);
+    color: white;
+}
