@@ -9,7 +9,7 @@ function PokemonInfo() {
 
     useEffect(() => {
 
-        let R2 = Math.floor(Math.random()*700)
+        let R2 = Math.floor(Math.random()*1024)
         fetch(`https://pokeapi.co/api/v2/pokemon/${R2}`)
         .then(response => response.json())
         .then(data => {

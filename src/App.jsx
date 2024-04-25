@@ -8,6 +8,7 @@ import Modal from './components/Modal/Modal'
 import ButtonC from './components/ButtonC/ButtonC'
 import { BrowserRouter, Link, Routes, Route } from 'react-router-dom'
 import PokemonInfo from './components/PokemonInfo/PokemonInfo'
+import InfiniteSquaring from './components/InfiniteSquaring/InfiniteSquaring'
 
 function App() {
 
@@ -25,9 +26,10 @@ function App() {
       
         <div className='links'>
           <Link to="/Places"><button>Random Place Zone</button></Link>
-          {/* <Link to="/ButtonA">Infinite Squaring</Link>
-          <Link to="/Accordian">Accordian</Link>
-          <Link to="/Modal">Modal</Link> */}
+          <Link to="/InfiniteSquaring"><button>Infinite Squaring</button></Link>
+          <Link to="/Accordian1"><button>Accordian 1</button></Link>
+          <Link to="/Accordian2"><button>Accordian 2</button></Link>
+          {/* <Link to="/Modal">Modal</Link> */}
           <Link to="/PokemonInfo"><button>Pokemon Generator</button></Link>
         </div>
         
@@ -35,20 +37,15 @@ function App() {
         <Routes>
           <Route path="/Places" element={<Places/>}/>
           <Route path="/PokemonInfo" element={<PokemonInfo/>}/>
+          <Route path="/InfiniteSquaring" element={<InfiniteSquaring/>}/>
+          <Route path="/Accordian1" element={<Accordian content="Hi"/>}/>
+          <Route path="/Accordian2" element={<Accordian content="Hi too" l="open too"/>}/>
         </Routes>
-        
-        <div>
-          <ButtonA defaultClickCount={2}/>
-          <ButtonA defaultClickCount={3}/>
-        </div>
 
-        <Accordian content="Hi"/>
-        <Accordian content="Hi too"/>
-        <ButtonB handleClick={openModal}/>
-        <Modal isOpen={modalOpen}/>
-        
+        {/* <ButtonB handleClick={openModal}/>
+        <Modal isOpen={modalOpen}/> */}
 
-        <h1>The End of the Page</h1>
+        {/* <h3>The End of the Page</h3> */}
       
       </BrowserRouter>
     </>

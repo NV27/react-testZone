@@ -2,14 +2,14 @@ import { useState } from 'react';
 import './style.css';
 import ButtonA from '../ButtonA/ButtonA';
 
-const Accordian = ({content}) => {
+const Accordian = ({content, l = 'open'}) => {
 
     const [text, setText] = useState('open');
     const [showContent, setShowContent] = useState(false);
 
     const handleClick = () => {
         if (showContent){
-            setText('open');
+            setText(l);
             setShowContent(false);
         }
         else{

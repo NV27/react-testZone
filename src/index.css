@@ -59,5 +59,6 @@ button:focus-visible {
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
-  width: 1000px
+  width: 1000px;
+  margin-bottom: 20px;
 }
